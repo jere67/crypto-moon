@@ -148,3 +148,90 @@ body {
     }
   }
 }
+
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to top, #000 30%, #130749 70%);
+  position: relative;
+}
+
+.hero-content {
+  text-align: center;
+  color: #fff;
+
+  h1 {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+
+    @media (max-width: 750px) {
+      font-size: 4rem;
+    }
+
+    span {
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      background-image: linear-gradient(90deg, #00f, #f0f);
+    }
+  }
+}
+
+.btc-float {
+  position: absolute;
+  top: -50px;
+  left: -70px;
+  width: 100px;
+  animation: move 2s infinite;
+}
+
+.eth-float {
+  position: absolute;
+  top: -50px;
+  right: -70px;
+  width: 100px;
+  animation: move 2s infinite;
+}
+
+@keyframes move {
+  0%,
+  100% {
+    transform: translateY(0) scale(0.14);
+  }
+  50% {
+    transform: translateY(-20px) scale(0.14);
+  }
+}
+
+.coin-slider .slider-coin {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fff;
+
+  img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  &__name {
+    font-weight: 600;
+
+    span {
+      &.red-text {
+        color: red;
+      }
+
+      &.green-text {
+        color: #0f0;
+      }
+    }
+  }
+
+  &__price {
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+}
+
+

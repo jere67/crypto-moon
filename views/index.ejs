@@ -38,18 +38,55 @@
 
 </section>
 
-<section id="hero" class="d-flex justify-content-center align-items-center min-vh-100">
-  <div class="px-4 py-5 my-5 text-center align-self-center">
-    <h1 class="display-4 fw-bold text-body-emphasis">MoonReach</h1>
-    <h2 class="display-6 text-body-emphasis">Track Your Crypto to the Moon</h1>
-    <div class="col-lg-6 mx-auto">
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Bitcoin</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Ethereum</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Solana</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Tether</button>
+<section id="hero">
+  <div class="container text-center hero-section d-flex align-items-center min-vh-100">
+      <div class="row justify-content-center">
+          <div class="col-12">
+              <div class="position-relative">
+                  <h1 class="display-3">
+                    Track Your Crypto to the Moon
+                  </h1>
+              </div>
+          </div>
       </div>
-    </div>
+      <div class="row coin-slider justify-content-center mt-5">
+          <div class="col-md-3 col-sm-6">
+              <div class="slider-coin p-3">
+                  <img src="./assets/bitcoin.png" alt="Bitcoin" class="img-fluid" width="100">
+                  <p class="slider-coin__name">
+                      Bitcoin <span class="<%= data[0].price_change_percentage_24h >= 0 ? 'text-success' : 'text-danger' %>"><%= data[0].price_change_percentage_24h.toFixed(2) %></span>
+                  </p>
+                  <p class="slider-coin__price">$ <%= data[0].current_price.toFixed(2) %></p>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+              <div class="slider-coin p-3">
+                  <img src="./assets/ethereum.png" alt="Ethereum" class="img-fluid" width="100">
+                  <p class="slider-coin__name">
+                      Ethereum <span class="<%= data[1].price_change_percentage_24h >= 0 ? 'text-success' : 'text-danger' %>"><%= data[1].price_change_percentage_24h.toFixed(2) %></span>
+                  </p>
+                  <p class="slider-coin__price">$ <%= data[1].current_price.toFixed(2) %></p>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+              <div class="slider-coin p-3">
+                  <img src="./assets/tether.png" alt="Tether" class="img-fluid" width="100">
+                  <p class="slider-coin__name">
+                      Tether <span class="<%= data[2].price_change_percentage_24h >= 0 ? 'text-success' : 'text-danger' %>"><%= data[2].price_change_percentage_24h.toFixed(2) %></span>
+                  </p>
+                  <p class="slider-coin__price">$ <%= data[2].current_price.toFixed(2) %></p>
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+              <div class="slider-coin p-3">
+                  <img src="./assets/bnb.png" alt="BNB" class="img-fluid" width="100">
+                  <p class="slider-coin__name">
+                      BNB <span class="<%= data[3].price_change_percentage_24h >= 0 ? 'text-success' : 'text-danger' %>"><%= data[3].price_change_percentage_24h.toFixed(2) %></span>
+                  </p>
+                  <p class="slider-coin__price">$ <%= data[3].current_price.toFixed(2) %></p>
+              </div>
+          </div>
+      </div>
   </div>
 </section>
 
