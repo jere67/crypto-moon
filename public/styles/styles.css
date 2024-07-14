@@ -1,5 +1,7 @@
 body {
   background-color: #13111a;
+  background-attachment: fixed;
+  font-family: "Montserrat", sans-serif;
 }
 
 .market-section {
@@ -135,6 +137,63 @@ body {
 .market-content .coin-row span img {
   width: 4rem;
   height: 4rem;
+}
+
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(#130749, #13111a);
+  position: relative;
+}
+
+.hero-content {
+  text-align: center;
+  color: #fff;
+}
+.hero-content h1 {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+}
+@media (max-width: 750px) {
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+}
+.hero-content h1 span {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(90deg, #00f, #f0f);
+}
+
+.coin-slider .slider-coin {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fff;
+}
+.coin-slider .slider-coin img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.coin-slider .slider-coin__name {
+  font-weight: 600;
+}
+.coin-slider .slider-coin__name span.red-text {
+  color: red;
+}
+.coin-slider .slider-coin__name span.green-text {
+  color: #0f0;
+}
+.coin-slider .slider-coin__price {
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+#moon {
+  background: linear-gradient(25deg, #2600fc, #ff00ea);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 /*# sourceMappingURL=styles.css.map */
