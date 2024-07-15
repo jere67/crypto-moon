@@ -1,6 +1,6 @@
 <%- include("partials/header.ejs") %>
 <section id="navbar">
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark mx-3" aria-label="Fifth navbar example">
+  <nav class="navbar fixed-top navbar-expand-lg mx-3" aria-label="Fifth navbar example">
     <div class="container-fluid my-1 d-flex justify-content-start">
       <a href="/"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="30" height="30" viewBox="0 0 256 256" xml:space="preserve">
         <defs>
@@ -20,10 +20,7 @@
             <a class="nav-link active" aria-current="page" href="#market">Market</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Search</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Why Us</a>
+            <a class="nav-link active" aria-current="page" href="#community">Join</a>
           </li>
           
         </ul>
@@ -52,7 +49,7 @@
               <div class="slider-coin p-3">
                   <img src="./assets/bitcoin.png" alt="Bitcoin" class="img-fluid" width="100">
                   <p class="slider-coin__name">
-                      Bitcoin <span class="<%= data[0].price_change_percentage_24h >= 0 ? 'text-success' : 'text-danger' %>"><%= data[0].price_change_percentage_24h.toFixed(2) %></span>
+                      Bitcoin <span class="<%= data[0].price_change_percentage_24h >= 0 ? 'text-success' : 'text-danger' %>"><%= data[0].price_change_percentage_24h.toFixed(2) %>%</span>
                   </p>
                   <p class="slider-coin__price">$ <%= data[0].current_price.toFixed(2) %></p>
               </div>
@@ -61,34 +58,34 @@
               <div class="slider-coin p-3">
                   <img src="./assets/ethereum.png" alt="Ethereum" class="img-fluid" width="100">
                   <p class="slider-coin__name">
-                      Ethereum <span class="<%= data[1].price_change_percentage_24h >= 0 ? 'text-success' : 'text-danger' %>"><%= data[1].price_change_percentage_24h.toFixed(2) %></span>
+                      Ethereum <span class="<%= data[1].price_change_percentage_24h >= 0 ? 'text-success' : 'text-danger' %>"><%= data[1].price_change_percentage_24h.toFixed(2) %>%</span>
                   </p>
                   <p class="slider-coin__price">$ <%= data[1].current_price.toFixed(2) %></p>
               </div>
           </div>
           <div class="col-md-3 col-sm-6" style="font-weight: bold;">
               <div class="slider-coin p-3">
-                  <img src="./assets/tether.png" alt="Tether" class="img-fluid" width="100">
+                  <img src="./assets/solana.png" alt="Solana" class="img-fluid" width="180">
                   <p class="slider-coin__name">
-                      Tether <span class="<%= data[2].price_change_percentage_24h >= 0 ? 'text-success' : 'text-danger' %>"><%= data[2].price_change_percentage_24h.toFixed(2) %></span>
+                      Solana <span class="<%= data[4].price_change_percentage_24h >= 0 ? 'text-success' : 'text-danger' %>"><%= data[4].price_change_percentage_24h.toFixed(2) %>%</span>
                   </p>
-                  <p class="slider-coin__price">$ <%= data[2].current_price.toFixed(2) %></p>
+                  <p class="slider-coin__price">$ <%= data[4].current_price.toFixed(2) %></p>
               </div>
           </div>
           <div class="col-md-3 col-sm-6" style="font-weight: bold;">
               <div class="slider-coin p-3">
-                  <img src="./assets/bnb.png" alt="BNB" class="img-fluid" width="100">
+                  <img src="./assets/dogecoin.png" alt="BNB" class="img-fluid" width="100">
                   <p class="slider-coin__name">
-                      BNB <span class="<%= data[3].price_change_percentage_24h >= 0 ? 'text-success' : 'text-danger' %>"><%= data[3].price_change_percentage_24h.toFixed(2) %></span>
+                      Dogecoin <span class="<%= data[9].price_change_percentage_24h >= 0 ? 'text-success' : 'text-danger' %>"><%= data[9].price_change_percentage_24h.toFixed(2) %>%</span>
                   </p>
-                  <p class="slider-coin__price">$ <%= data[3].current_price.toFixed(2) %></p>
+                  <p class="slider-coin__price">$ <%= data[9].current_price.toFixed(2) %></p>
               </div>
           </div>
       </div>
   </div>
 </section>
 
-<section id="market" class="market-section">
+<section id="market" class="market-section my-5">
   <div class="container market-content">
     <h2>Market Update</h2>
     <div class="market-content__coin-list">
@@ -119,9 +116,20 @@
   </div>
 </section>
 
-
-<section id="search">
-
+<section id="community">
+  <div class="container text-center mt-5" style="height: 50vh;">
+      <div class="row justify-content-center">
+          <div class="col-12">
+              <div class="position-relative">
+                  <h1 class="display-4" style="font-weight: bold;">
+                    Join our <h1 class="display-2" id="moon" style="font-weight: bold;">Community</h1>
+                  </h1>
+                  <button class="my-4">Join</button>
+              </div>
+          </div>
+      </div>
+      
+  </div>
 </section>
 
 <section id="whyus">

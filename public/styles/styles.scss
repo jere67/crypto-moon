@@ -181,7 +181,7 @@ body {
   color: #fff;
 
   img {
-    width: 60px;
+    // width: 60px;
     height: auto;
     margin-bottom: 1rem;
   }
@@ -210,4 +210,14 @@ body {
   background: linear-gradient(25deg, #2600fc, #ff00ea);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+}
+
+button {
+  font-size: $text-normal;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  background: $color-blue-purp;
+  color: $color-white;
+  border-radius: 5rem;
+  transition: all 0.2s;
 }

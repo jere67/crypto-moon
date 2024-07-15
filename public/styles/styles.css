@@ -168,7 +168,6 @@ body {
   color: #fff;
 }
 .coin-slider .slider-coin img {
-  width: 60px;
   height: auto;
   margin-bottom: 1rem;
 }
@@ -190,6 +189,16 @@ body {
   background: linear-gradient(25deg, #2600fc, #ff00ea);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #6a00ff, #ff0066);
+  color: #fff;
+  border-radius: 5rem;
+  transition: all 0.2s;
 }
 
 /*# sourceMappingURL=styles.css.map */
