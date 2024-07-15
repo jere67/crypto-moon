@@ -1,8 +1,8 @@
-# $MOON
+# Crypto Moon
 
 ![Screenshot of Website](./public/images/crypto-moon.png)
 
-Crypto Moon is a website that allows users to track the top 10 cryptocurrencies by market capitalization. It provides accurate, real-time data on coin prices, market caps, 24-hour price changes, and trading volume. The app was built with Express.js for the backend, Axios for making API requests to Coingecko API, EJS for templating, and SCSS for styling.
+Crypto Moon is a website that allows users to track the top 10 cryptocurrencies by market capitalization. It provides accurate, real-time data on coin prices, market caps, 24-hour price changes, and trading volume. The app was built with Express.js for the backend, Axios for making API requests to Coingecko API, EJS for templating, and SCSS for styling (inspired design).
 
 Live demo: [Crypto Moon Demo](https://crypto-moon-uetp.onrender.com/)
 
