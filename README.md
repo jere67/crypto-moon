@@ -24,8 +24,10 @@ Live demo: [Crypto Moon Demo](https://crypto-moon-uetp.onrender.com/)
 5. Open your web browser and navigate to http://localhost:3000.
 
 Example: 
+```
     git clone git@github.com:jere67/crypto-moon.git
     cd crypto-moon
     npm install
     echo "token=YOUR_API_KEY" > .env
     node index.js
+```
